@@ -168,7 +168,7 @@ extern int ai[JNB_MAX_PLAYERS];
 #elif _WIN32
 #define	DATA_PATH "data/jumpbump.dat"
 #else
-#define	DATA_PATH "%%PREFIX%%/share/jumpnbump/jumpbump.dat"
+#define	DATA_PATH "%%PREFIX%%/share/games/jumpnbump/jumpbump.dat"
 #endif
 #endif
 
@@ -344,6 +344,7 @@ void register_mask(void *pixels);
 #ifdef USE_SDL
 /* long filelength(int handle); */
 void fs_toggle();
+void exit_fullscreen();
 int intr_sysupdate();
 #endif
 
